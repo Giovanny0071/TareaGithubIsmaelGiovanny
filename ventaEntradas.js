@@ -1,4 +1,4 @@
-var aPelis=new Array("Que bello es vivir","Solo en casa","Cuento de Navidad");
+var aPelis=new Array("Que bello es vivir","Solo en casa","Cuento de Navidad","Gladiator 2");
 var aLoc= new Array(50,120,60);
 var aSalas=new Array("1","2","3");
 //Almacenamos la localidades vendidas por sala: aVendidas1, aVendidas2 y aVendidas3
@@ -17,12 +17,14 @@ const precio=3;
 /*Al seleccionar la pelicula recuperamos la localidades ya vendidas en esa sala
 asi como el numero de localidades de la sala */
 function seleccionarPeli(){
-    var indice=this.event.target.id.substring(4);
-    sala=aSalas[indice-1];
-    peli=aPelis[indice-1];
-    numButacas=aLoc[indice-1];
+    debugger
+    var indicePeli=this.event.target.id.substring(4);
+    var indiceSala = this.event.target.
+    sala=aSalas[indicePeli-1];
+    peli=aPelis[indiceSala-1];
+    numButacas=aLoc[indicePeli-1];
     butacaSel=0;
-    switch(indice){
+    switch(indiceSala){
         case "1":
             vendidas=aVendidas1.slice(0,aVendidas1.length);
             break;
