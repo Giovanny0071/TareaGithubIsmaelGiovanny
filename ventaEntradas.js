@@ -14,6 +14,18 @@ var butacaSel=0 //numero de butacas que se han elegido para comprar
 var peli="";    //Titulo de la pelicula seleccionada
 const precio=3;
 
+
+function salaMedioLLena(butacasTotales, butacasVendidas){
+    
+    if (butacasVendidas >= (butacasTotales/2)){
+        document.getElementById("alerta").textContent = "CUIDADO, la sala esta al 50% de su capacidad.";
+    }else{
+       document.getElementById("alerta").textContent = "";
+    }
+    
+
+}
+
 /*Al seleccionar la pelicula recuperamos la localidades ya vendidas en esa sala
 asi como el numero de localidades de la sala */
 function seleccionarPeli(){
@@ -34,6 +46,7 @@ function seleccionarPeli(){
             break;
     }
     pintarButacas();    
+    salaMedioLLena(numButacas, vendidas.length);
 }
 
 /*Se dibujan las localidades de la sala diferenciando si están disponibles o no  */
@@ -56,6 +69,7 @@ function pintarButacas(){
         }
         else{
             contenedor.innerHTML+="<br><br><button id='btnConfirm' onclick='confirmarVenta();' title='Comprar entradas'>Comprar</button>"
+            contenedor.innerHTML += "<p id='alerta'></p>";
         }
 }
 
