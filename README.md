@@ -22,10 +22,11 @@ aqui dentro hacemos
 rm -r html
 ```
 para borrar el html que tiene por defecto
-<p>5. Con ese html ya borrado para poder meter nuestra pagina primero tendremos que asegurarnos de que la propia carpeta del proyecto se llama html y que tenemos un index.html para que lo encuentre de forma automatica</p>
+<p>5. Con ese html ya borrado para poder meter nuestra pagina primero tendremos que asegurarnos de que la propia carpeta del proyecto se llama html y que tenemos un index.html para que lo encuentre de forma automatica </p>
 
-<p>6. Si lo tenemos el siguiente paso seria, en el contenedor del nginx iniciado le damos a files y seguimos la ruta antes mencionada hasta la carpeta nginx donde le damos click derecho y le damos a import, nos saldra nuestro ordenador, seleccionamos nuestro proyecto y listo</p>
+<p>6. Si lo tenemos el siguiente paso seria, en el contenedor del nginx iniciado le damos a files y seguimos la ruta antes mencionada hasta la carpeta nginx donde le damos click derecho y le damos a import, nos saldra nuestro ordenador, seleccionamos nuestro proyecto y listo (Asegurate de que la carpeta que importas sea la carpeta que contiene los archivos no una carpeta que contiene una subcarpeta)</p>
 <img width="745" height="815" alt="image" src="https://github.com/user-attachments/assets/0ff1c012-f235-4b9b-ba83-ba4f8e74872f" />
 
 
 <p>7. Comprobamos que funciona dandole a los 3 puntos y dandole a open with browser y si todo ha salido bien deberiamos ver nuestra pagina web funcionando</p>
+<img width="1137" height="60" alt="image" src="https://github.com/user-attachments/assets/72c7674e-bf64-4d3b-98f6-c1b9c0cc55a4" />
